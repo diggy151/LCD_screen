@@ -31,9 +31,33 @@ from adafruit_display_shapes.line import Line
 from adafruit_display_shapes.polygon import Polygon
 
 
-triangle = Triangle(200, 130, 190, 110, 180, 100, fill=None, outline=0xFFFFFF)
+
+
+
+triangle = Triangle(45, 95, 50, 100, 55, 95, fill=0xeeee1b, outline=0xeeee1b)
 my_group.append(my_sprite)
 my_group.append(triangle)
+
+rect = Rect(165, 20, 25, 60, fill=None, outline=0xad8e56, stroke=1)
+my_group.append(rect)
+
+rect = Rect(173, 70, 5, 10, fill=None, outline=0xeeee1b, stroke=2)
+my_group.append(rect)
+
+line = Line(140, 80, 220, 80, color=0xa06f18)
+my_group.append(line)
+
+circle = Circle(50, 100, 20, fill=None, outline=0xa06f18, stroke=2)
+my_group.append(circle)
+
+triangle2 = Triangle(40, 85, 40, 60, 45, 70, fill=None, outline=0xe94406)
+my_group.append(triangle2)
+triangle2 = Triangle(50, 85, 50, 60, 55, 70, fill=None, outline=0xe94406)
+my_group.append(triangle2)
+triangle2 = Triangle(60, 85, 60, 60, 65, 70, fill=None, outline=0xe94406)
+my_group.append(triangle2)
+
+
 
 while True:
     pass
